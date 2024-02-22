@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*GENERALES*/
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+li{
+	list-style: none;
+}
+
+.logo{
+	width: 140px;
+}
+
+
+
+
+
+
+/*Header*/
+
+.navegator{
+	
+	padding:40px 20px;
+	background-color: rgb(10, 2, 2);
+	
+	display: flex;
+	gap: 16rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-navegator{
+	display: flex;
+	gap: 26px;
+	text-transform: capitalize;
+}
+
+.container{
+	padding: 80px;
+}
+/*Carrito de compras*/
+.container-ShoppingBasket{
+	position:absolute;
+	right: 0;
+	top: 58px;
+	background-color: white;
+	height: auto;
+	width: 400px;
+	border-radius: 15px;
+	padding: 20px 10px;
+	text-align: center;
+}
+
+.hiddenBasket{
+	display: none;
+}
+
+.carrito{
+	position: relative;
+}
+
+.count-products{
+	position: absolute;
+	top: 55%;
+	right: 0;
+
+	background-color: white;
+	color: black;
+	border-radius:50%;
+	width: 25px;
+	height: 25px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.basketInfo{
+	width: 100%;
+	display: flex;
+	flex-direction:row ;
+	justify-content: space-around;
+	margin-bottom: 10px;
+	border-bottom: 2px solid rgba(139, 139, 139, 0.596);
+	padding: 5px 0;
+}
+
+#shopBasket{
+	display: flex;
+	flex-direction: column ;
+	justify-content: center;
+}
+
+.total{
+	font-weight: bold;
+	margin-top: 10px;
+	padding: 2px;
+}
+
+.price{
+	font-weight: bold;
+}
+
+.icon-cart:hover{
+	cursor: pointer;
+}
+
+.icon-close{
+	width: 30px;
+	height: 30px;
+}
+
+.icon-close:hover{
+	color: red;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+/*sectionUNO Principal*/
+
+.card{
+	padding: 20px;
+}
+
+
+.principal-flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 170px;
+}
+
+
+.principal{
+	background-color: rgb(10, 2, 2) ;
+}
+
+.principal-hamburguesa{
+	width: 500px;
+}
+
+
+.title-principal{
+	color: white;
+	font-size: 60px;
+	text-transform: uppercase;
+}
+
+.text-principal{
+	color: white;
+	width: 580px;
+	margin-bottom: 20px;
+}
+
+.btn{
+	width: 150px;
+	height: 50px;
+	border: 3px solid rgb(255, 30, 0);
+	border-radius: 45px;
+	color: white;
+	font-size: 15px;
+	background-color: rgb(10, 2, 2);
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.menu{
+	margin-left: 20px;
+}
+
+.btn:hover{
+	background-color: rgb(255, 132, 61);
+}
+
+
+/*SECTION SHOP*/
+
+.shop{
+	padding:0 160px;
+	margin:0 150px;
+}
+
+.title-shop{
+	text-transform: capitalize;
+	font-size: 30px;
+	margin: 90px 0;
+	padding: 0 0 0 20px;
+}
+
+/*grid shop*/
+.imagen{
+	width: 100%;
+	height: 300px;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+
+.imgH{
+	background-image: url(https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww);
+	
+}
+
+.imgHTwo{
+	background-image: url(https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+.imgHThre{
+	background-image: url(https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D);
+	
+}
+
+.imgHFour{
+	background-image: url(https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D);
+	
+}
+
+.imgHFive{
+	background-image: url(https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+.imgHSix{
+	background-image: url(https://images.unsplash.com/photo-1549611016-3a70d82b5040?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+.H-grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 40px;
+	justify-content: center;
+	justify-items: center;
+}
+
+
+.card-items-shop{
+	width: 350px;
+	border-radius: 15px;
+}
+
+.text-items-container{
+	padding: 20px 30px;
+}
+
+.title-item{
+	font-weight: bold;
+	font-size: 17px;
+	margin-bottom: 15px;
+}
+
+.price-item{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.btn-item-add{
+	width: 100%;
+	background-color: black;
+	color: white;
+	border: none;
+	height: 40px;
+}
+
+
+.btn-item-add:hover{
+	background-color: rgb(255, 136, 0);
+	cursor: pointer;
+}
+
+/*HORARIO*/
+
+.horario{
+	padding:90px 300px;
+	background-color:rgb(10, 2, 2) ;
+	color: white;
+	margin: 50px 0 0;
+}
+
+.title-horario{
+	font-size: 80px;
+}
+
+.horario-flex{
+	display: flex;
+	gap: 5rem;
+}
+
+.item-horario{
+	width: 100%;
+}
+
+.text-horario{
+	font-size: 15px;
+	color: gray;
+	margin-bottom: 15px;
+}
+
+.icons-horario{
+	margin-right: 25px;
+	color: #ffffff;
+}
+
+/*MAPA*/
+
+.mapa{
+	background-color:rgb(10, 2, 2);
+	padding: 20px;
+}
+
+/*FOOTER*/
+
+.footer-flex{
+	display: flex;
+	justify-content: space-around;
+	background-color: rgb(10, 2, 2);
+	padding-bottom: 90px;
+}
+
+.title-footer{
+	color: white;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/*===============*/
+.map {
+	filter: grayscale(100%) invert(92%) contrast(93%);
+}
+
+.icon-cart {
+	width: 40px;
+	height: 40px;
+	stroke:white;
+}
+
+.icon-close {
+	width: 25px;
+	height: 25px;
+}
